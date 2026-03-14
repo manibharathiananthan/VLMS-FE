@@ -84,7 +84,7 @@ function ExpiryAlerts({ user }) {
                   }}
                 >
                   <strong>{alert.vehicleNumber}</strong> <br />
-                  {alert.type} expires on {expiryDate.toLocaleDateString()} (
+                  {alert.documentType} expires on {expiryDate.toLocaleDateString()} (
                   {daysLeft} days left)
                 </div>
               );
@@ -110,7 +110,7 @@ function ExpiryAlerts({ user }) {
                 }}
               >
                 <strong>{alert.vehicleNumber}</strong> <br />
-                {alert.type} expired on{" "}
+                {alert.documentType} expired on{" "}
                 {new Date(alert.expiryDate).toLocaleDateString()}
               </div>
             ))}
